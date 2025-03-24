@@ -1,5 +1,5 @@
 import React from "react"
-import {experiment_sp} from "../data/Experiment"
+import {getAllExperiments} from "../data/ExperimentApi"
 
 export const AddExperiment = () => {
 
@@ -15,13 +15,11 @@ export const AddExperiment = () => {
           SP Experiment
         </h2>
         <ul className="list-none m-0 p-0">
-          {experiment_sp.map(
-            (experiment) => (
-              <li key={experiment.id} className="p-1 text-base text-slate-800">
-                {experiment.title}
+
+              <li key="{experiment.id}" className="p-1 text-base text-slate-800">
+               
               </li>
-            )
-          )}
+
         </ul>
       </div>
     </div>
